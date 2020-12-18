@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYGGGJVM9C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DYGGGJVM9C');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="keywords" content="blog contact" />
+    <meta name="description" content="Contact page for Circle Talk." />
+
+    <title>Contact Form</title>
+
+    <!--link to style.css file-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!--link to favicon image-->
+    <link rel= "icon" type="image/ico" href="images/favicon.ico" />
+
+    <link rel= "icon" type="image/png" href="images/favicon.png" />
+
+  </head>
+
+  <body>
+    <header class="content">
+      <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Logo" title="Logo" width="400" height="150"/></a>
+      </div>
+    <nav class="menu">
+      <ul>
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="about.html">About Me</a></li>
+        <li class="menu-item"><a href="recipes/recipes.html">Recipes</a>
+          <ul class="sub-menu">
+            <li><a href="recipes/starters.html">Starters</a></li>
+            <li><a href="recipes/entrees.html">Entrees</a></li>
+            <li><a href="recipes/beverages.html">Beverages</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="seasonal/seasonal.html">Seasonal</a>
+          <ul class="sub-menu">
+            <li><a href="seasonal/winter.html">Winter 2020</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>We appreciate your feedback!</h1>
+        <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+
+        <div class="first-name input-section">
+          <label for="first-name" class="label_input_wrap">First Name</label>
+          <input type="text" name="req_first-name" id="first-name" />
+        </div>
+
+        <div class="last-name input-section">
+          <label for="last-name" class="label_input_wrap">Last Name</label>
+          <input type="text" name="req_last-name" id="last-name" />
+        </div>
+
+        <div class="email input-section">
+          <label for="email" class="label_input_wrap">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div class="comments input-section">
+          <label for="comments" class="label_input_wrap">Comments</label>
+          <textarea name="comments" id="comments" cols="50" rows="20" placeholder="Type Comments Here"></textarea>
+        </div>
+
+        <div class="dropdown input-section">
+          <label for="state" class="label_input_wrap">Where do you live?</label>
+          <select name="state" id="state">
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+            <option value="OT">Other</option>
+          </select>
+        </div>
+
+        <div class="uploadfile input-section">
+          <label for="uploadfile">Share your photos here!</label>
+          <input type="file" name="sharefile" id="uploadfile" />
+        </div>
+
+        <div class="reset input-section">
+          <input type="reset" />
+        </div>
+
+        <div class="submit input-section">
+          <input type="submit" />
+        </div>
+
+        </form>
+      </div>
+    </main>
+
+    <footer>
+    <div class="socialmedia">
+      <a href="https://pin.it/2Ep0BaU" target="_blank"><img src="images/icon.png" alt="Pinterest" title="Pinterest" width="50" height="50"/></a>
+    </div>
+  </footer>
+  </body>
+
+</html>
